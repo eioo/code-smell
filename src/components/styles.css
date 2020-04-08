@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 100px 30px;
+  grid-template-areas: "message message" "name send";
+  row-gap: 0.5rem;
+  column-gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.message { grid-area: message; }
+.name { grid-area: name; }
+.send-button { grid-area: send;}
+
+h2 {
+  text-align: center;
+}
+
+input[type='text'],
+textarea,
+button {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0.4rem;
+}
+
+input[type='text'] {
+  width: calc(100% - 0.8rem);
+}
+
+textarea {
+  width: calc(100% - 0.8rem - 2px);
+  height: calc(100% - 0.8rem);
+}
+
+button {
+  width: 100%;
+  height: 100%;
+}

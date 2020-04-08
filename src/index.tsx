@@ -1,7 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from './components/App';
+
+import GuestBook from './components/GuestBook';
 import * as serviceWorker from './serviceWorker';
 
-render(<App />, document.getElementById('root'));
+render(<GuestBook />, document.getElementById('root'));
 serviceWorker.unregister();
