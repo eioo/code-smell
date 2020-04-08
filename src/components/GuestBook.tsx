@@ -1,7 +1,6 @@
+/* eslint-disable */
 import './styles.css';
-
 import React, { useEffect, useState } from 'react';
-
 import Message, { IMessage } from './Message';
 
 let messages: IMessage[] = []; // 'let' turhaan ja ei käytä reactin statea
